@@ -21,7 +21,7 @@ router.get('/', async (_, res: Response) => {
     }
   } catch (error) {
     console.error('Error processing request:', error);
-    res.send('No authors found');
+    res.status(500).json({ error: 'Internal Server Error' }); // set the status code to 500
   }
 });
 

@@ -53,9 +53,12 @@ should be placed in `tests/authorService.test.ts`.
 
 Briefly explain a limitation of the tests in `tests/authorSchema.test.ts` in the space below.
 
+A limitation of the tests in `tests/authorSchema.test.ts` is that the tests are tightly coupled to the
+implementation of the author schema. Therefore, any changes made to the schema must also be reflected in the
+tests. Since one of the main goals of these unit tests is for us to verify our code is working after
+refactoring, we have essentially eliminated the utility of these tests.
 
-
-## Part 3
+## Part 3 //Professor Mitra suggested we skip this part as we are short on time
 
 Generate the coverage report for the tests you wrote. How can you improve
 your tests using the coverage report? Briefly explain your 
